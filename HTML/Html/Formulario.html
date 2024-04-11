@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1º Formulario</title>
+    <meta name="autho" content="Alba Sánchez Olmedo"/>
+    <meta name="keywords" content="Formulario,HTML,CSS"/>
+    <link rel="stylesheet" href="../Css/formulario.css">
+</head>
+<body>
+    <!-- Tablas -> <table>....</table> Listas -> <ul>...<li></li>...</ul> -->
+    <!-- En el caso de los formularios, comenzamos con <form>...</form> -->
+    <div id="contenedor">
+        <h1 id="cabecera">Mi primer formulario</h1>
+        <form autocomplete="on" autocapitalize="">
+            <!-- Entrada de datos -->
+            <!-- label -> Etiqueta que muestra el atributo de la entrada, y se debe relacionar con la entrada a través del "id" -->
+            <P>
+                <label for="nombre">Nombre:</label>
+            <!-- el atributo for debe ir asociado a un tipo -->
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre" required minlength="3" maxlength="20" pattern="[a-Z]">
+            </P>
+            <p>
+            <!-- input type -> Es la más utilizada en los formularios -->
+                <label for="apellido" placeholder="Ingresa tu apellido">Apellido:</label>
+                <input type="text">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" readonly value="albasanchezolmedo00@gmail.com" disabled>
+            </p>
+            <p>
+                <label for="password">Contraseña:</label>
+                <!-- Al menos un número, al menos una mayúscula, una minúscula y minimo 8 caracteres -->
+                <input type="password" id="password" min="8" pattern="(?=.* \d)(?=.*[a-z])(?=.*[A-Z].{8,})">
+                <!-- Los pattern o patrones o expresiones regulares..... los copias de internet -->
+            </p>
+            <p>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" min="18" max="105" step="1" required>
+            </p>
+            <p>
+                <label for="color">Color:</label>
+                <input type="color" id="color">
+            </p>
+            <p>
+                <label for="dni">DNI:</label>
+                <input type="file" id="dni" accept="img/*" multiple>
+            </p>
+            <p>
+                <label for="nacimiento">Fecha Nacimiento:</label>
+                <!-- Fecha -->
+                <input type="date" name="nacimiento" id="fechaN" min="1960-01-01" max="2024-03-31" required>
+                <br><input type="datetime-local" name="fechaHora" id="fechaHora">
+                <!-- Mes -->
+                <br><input type="month" name="mes" id="mes">
+            </p>
+
+            
+            <p>
+                <label for="sexo">Sexo:</label>
+            <!-- Input radio ="radio", mmuestra una seleccion de norma general, solo se puede seleccionar una opción -->
+                <input type="radio" id="sexo" name="sexo" value="mujer">Mujer
+                <br>
+                <input type="radio" id="sexo" name="sexo" value="hombre">Hombre
+            </p>
+            <p>
+                <label for="cursos">Cursos de interés:</label>
+            <!-- Input type="checkbox" -> Son cajas que se pueden seleccionar varias a la vez -->
+                <input type="checkbox" name="html" id="html" value="html">HTML
+                <br><input type="checkbox" name="css" id="css" value="css">CSS
+                <br><input type="checkbox" name="phyton" id="phyton" value="phyton">Phyton
+                <br><input type="checkbox" name="java" id="java" value="java">Java
+                <br><input type="checkbox" name="php" id="php" value="php">PHP
+            </p>
+            <p>
+            <!-- Input type="submit" -> Tipico para enviar el formulario, siempre se le debe dar un valor y debe serl el último en el formulario -->
+                <input type="submit" value="Enviar datos">
+            </p>
+            <!-- Input type="reset" -> Limpia lo que haya escrito en el formulario -->
+                <input type="reset" value="Reiniciar datos">
+        </form>
+    </div>
+
+</body>
+</html>

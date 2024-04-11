@@ -1,0 +1,23 @@
+body{
+    background-color: #334F86;
+    color: white;
+}
+#contenedor1, #contenedor2{
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 30px;
+    background-color: #4B75C6;
+    /* Sirve para posicionar en el centro nuestro contenedor */
+        display: block;
+}
+h1, h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#contenedor1 div{
+    border: 2px solid;
+}
+
+
