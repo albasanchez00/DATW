@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas Ordenadas</title>
+    <meta name="autho" content="Alba Sánchez Olmedo"/>
+    <meta name="keywords" content="Listas,HTML,CSS,Ordenadas"/>
+    <link rel="stylesheet" href="../Css/listas.css">
+</head>
+<body>
+    <!-- Listas ordenadas -->
+    <ol>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+        <li>Cinco</li>
+        <li>Seis</li>
+    </ol>
+
+    <!-- Lista Desordenada -->
+    <ul>
+        <li>Caballo</li>
+        <li>Gato</li>
+        <li>Elefante</li>
+        <li>Perro</li>
+        <li>Pajaro</li>
+        <li>Ardilla</li>
+    </ul>
+
+    <!-- Listas de Descripciones o Definiciones -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lenguaje para Desarrollar Páginas Web</dd>
+        <dt>CSS</dt>
+        <dd>Lenguaje de Estilos para las Páginas Web</dd>
+    </dl>
+
+    <!-- Estilos en listas desordenadas -->
+    <!-- None -> Sin estilo -->
+    <ul class="ul1">
+        <li>Caballo</li>
+        <li>Gato</li>
+        <li>Elefante</li>
+        <li>Perro</li>
+        <li>Pajaro</li>
+        <li>Ardilla</li>
+    </ul>
+
+    <!-- Circle -> Circulos -->
+    <ul class="ul2">
+        <li>Caballo</li>
+        <li>Gato</li>
+        <li>Elefante</li>
+        <li>Perro</li>
+        <li>Pajaro</li>
+        <li>Ardilla</li>
+    </ul>
+
+    <!-- Square -> Cuadrados -->
+    <ul class="ul3">
+        <li>Caballo</li>
+        <li>Gato</li>
+        <li>Elefante</li>
+        <li>Perro</li>
+        <li>Pajaro</li>
+        <li>Ardilla</li>
+    </ul>
+
+    <!-- Tipo Menú -->
+    <ul id="menu">
+        <li class="li4"><a href="#">Inicio</a></li>
+        <li class="li4"><a href="#">Servicios</a></li>
+        <li class="li4"><a href="#">Sobre nosotros</a></li>
+        <li class="li4"><a href="#">Blog</a></li>
+        <li class="li4"><a href="#">Tienda</a></li>
+        <li class="li4"><a href="#">Contacto</a></li>
+    </ul>
+
+
+    <!-- Variaciones de listas -->
+    <!-- Listas con letra mayúscula -->
+    <ol type="A">
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+        <li>Cinco</li>
+        <li>Seis</li>
+    </ol>
+
+    <!-- Listas con letra minúscula -->
+    <ol type="a">
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+        <li>Cinco</li>
+        <li>Seis</li>
+    </ol>
+    
+    <!-- Listas con Número Romanos en mayúscula -->
+    <ol type="I">
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+        <li>Cinco</li>
+        <li>Seis</li>
+    </ol>
+    
+    <!-- Listas con Número Romanos en minúscula -->
+    <ol type="i">
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+        <li>Cinco</li>
+        <li>Seis</li>        
+    </ol>
+
+
+    <!-- Lisyas encadenadas/anidadas -->
+    <ol>
+        <li>Capítulo 1</li>
+        <ol>
+            <li>El rescate</li>
+            <li>La huída</li>
+            <li>La carcel</li>
+            <li>El destierro</li>
+        </ol>
+        <li>Capítulo 2</li>
+        <ol>
+            <li>El viaje</li>
+            <li>La desesperación</li>
+            <li>La carcel</li>
+            <li>El destierro</li>
+        </ol>
+        <li>Capítulo 3</li>
+        <ol>
+            <li>El rescate</li>
+            <li>La huída</li>
+            <li>La carcel</li>
+            <li>El destierro</li>
+        </ol>
+    </ol>
+        
+        
+
+    <!-- Listas anidada no ordenada -->
+    <ul>
+        <li>Capítulo 1</li>
+        <ul>
+            <li>El rescate</li>
+            <ul>
+                <li>Otros</li>
+                <li>Varios</li>
+            </ul>
+            <li>La <span style="color: red; font-family: Georgia, 'Times New Roman', Times, serif;">huída</span></li>
+            <li>La carcel</li>
+            <li>El destierro</li>
+        </ul>
+        <li>Capítulo 2</li>
+        <li>Capítulo 3</li>
+    </ul>
+
+    <!-- Otras variantes -->
+    <ol start="5" reversed style="margin: auto; width: 100%;">
+        <li>Cinco</li>
+        <li>Cuatro</li>
+        <li>Tres</li>
+        <li>Dos</li>
+        <li>Uno</li>
+    </ol>
+
+</body>
+</html>

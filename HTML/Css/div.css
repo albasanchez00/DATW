@@ -1,0 +1,59 @@
+#div1{
+    background-color: cadetblue;
+    width: 150px;
+}
+#div1, #p1{
+    color: azure;
+    padding: 5px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#div2{
+    width: 50%;
+    background-color: aqua;
+}
+
+#div3, #div4, #div5{
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+#div3, #div6, #div9{
+    background-color: beige;
+
+}
+
+#div4, #div7, #div10{
+    background-color: bisque;
+
+}
+
+#div5, #div8, #div11{
+    background-color: moccasin;
+
+}
+
+#div6, #div7, #div8{
+    width: 25%;
+    margin: 10px;
+    float: left;
+    padding: 10px;
+}
+#contenedor1{
+    width: 70%;
+    margin: auto;
+}
+
+#div9, #div10, #div11{
+    clear: both;
+    width: 25%;
+    display: inline-block;
+    padding: 10px;
+}
+#div1 #parrafo2, #div11 p{
+    text-align: right;
+}
+#div12{
+    width: 10%;
+    display: inline;
+}

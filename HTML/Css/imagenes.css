@@ -1,0 +1,25 @@
+.img1{
+    width: 40%;
+}
+div{
+    width: 50%;
+    height: 500px;
+    background-color: black;
+    margin: auto;
+    text-align: center;
+}
+hr{
+    color: black; 
+    width: 50%;
+}
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: dimgray;
+    letter-spacing: 5px;
+}
+p{
+    color: aliceblue;
+}
+
+

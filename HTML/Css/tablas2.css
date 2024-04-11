@@ -1,0 +1,27 @@
+table{
+    /* Tipo de bordes:
+        -Dotted -> Puntitos
+        -Dashed -> Rallitas
+        -Solid -> Solido
+        -Double -> Doble
+        -Groove -> Lineas enteras
+        -Ridge ->
+        -Inset -> Solo por dentro
+        -Outset -> Solo por fuera
+        -None -> Ninguna
+        -Hidden -> Invisible
+        
+    */
+    background-color: blanchedalmond;
+    border: 1px solid maroon;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+/* Un pading se utiliza para crear un espacio */
+td,th{
+    padding: 15px;
+    border: 1px solid maroon;
+    border-collapse: collapse;
+    text-align: center;
+}
