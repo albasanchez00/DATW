@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes</title>
+    <meta name="autho" content="Alba Sánchez Olmedo"/>
+    <meta name="keywords" content="Imágenes,HTML,Formato"/>
+    <!-- Favicon, icono de la pestaña del navegador -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Css/imagenes.css">
+
+</head>
+<body>
+    <h1>Imágenes</h1>
+    <hr>    
+    <!-- Formato de las imágenes -->
+    <!-- jpg, pnc, gif, avif *, svg. El recomendado por google es -> webp  -->
+    <div>
+        <p>Un gatito jugando con una flor en el jardin</p>
+        <img class="img1" src="img/gato-jugando.webp" alt="gatito negro jugando con una flor">
+        <img class="img1" src="img/gato-jugando.webp" alt="gatito negro jugando con una flor">    
+    </div>
+    <!-- Utilizar las imagenes como enlaces -->
+    <a href="https://youtube.com"><img src="img/YT.png" alt="youtube"></a>
+
+    <!-- Mapa de imagen -->
+    <!-- 1. Vamos primero a Paint y cogemos las coordenadas del área donde queremos que se inserte el enlace en la imagen -->
+    <img class="img2" src="img/gato-aseandose.webp" alt="Gatito aseandose" usemap="#miMapa">
+    <!-- 2. Después creamos el mapa de imagen donde pondremos las coordenadas y el enlace de la pagina donde queramos que redirija -->
+    <map name="miMapa">
+        <area shape="rect" coords="418,346,524,452" href="https://youtube.com" alt="gato aseandose">
+    </map>
+
+</body>
+</html>

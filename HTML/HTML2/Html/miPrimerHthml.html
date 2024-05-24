@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--La etiqueta <head> contiene los datos sobre el documento-->    
+<head>
+    <!--Comentario: No se muestran en la página, pero es importante para el programado-->
+    <meta charset="UTF-8">
+    <!--Permite que se adapte al ancho automaticamente y se adapte al tipo de navgador-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>&lt;Primer HTML&gt;</title>
+    <!--La / sirve para cerrar la etiqueta en los casos como de <meta> (no es obligatorio)-->
+    <meta name="autho" content="Alba Sánchez Olmedo"/>
+    <meta name="keywords" content="HTML,ETIQUETAS,HEAD"/>
+</head>
+<body style="background-color: rgb(241, 241, 235);">
+    <h1>Titulo h1 principal de la página web</h1>
+    <!--ETIQUETA SIN CIERRE O UNICA-->
+    <hr><!--hr ->Muestra un línea horizontal-->
+    <h2>Titulo h2 de la página web</h2>
+    <br> <!--Hace un salto de línea-->
+    <h3>Titulo h3 de la página web</h3>
+    <h4>Titulo h4 de la página web</h4> 
+    <h5>Titulo h5 de la página web</h5>
+    <h6>Titulo h6 de la página web</h6>
+    <!--La etiqueta <p> me permite organizar los parrafos con saltos de líneas-->
+    <!--Parrafo sin la etiqueta <p>, no respeta el salto de línea-->
+    <!--La etiqueta (tittle=""") muestra un pequeño texto cuando pones el cursor encima"-->
+    <p style="background-color: yellow;" title="Primer párra">Esto es un parrafo con etiqueta</p>
+    <p>Sigo escribiendo con etiqueta</p>
+    <!--Etiquetas con atributos: Requieren informacion para su contenido, por ejemplo,
+    la etiqueta <a> que hace referencia a un enlace o link href-->
+    <a href="https://google.es">Ir a Google</a>
+    <!--Insertar una imagen: Con la etiqueta <img> podremos insertar una imagen
+    src-> Sirve para poner la ruta de la imagen y alt-> Sirve para poner una 
+    descripcion en la imagen (no será visible por el usuario).-->
+    <br> <!--Hace un salto de línea-->
+    <!--&quot-> Sirve para que muestre unas "" en el texto-->
+    <img src="img/descarga.jpg" alt="Una &quot;flor&quot; bonita" width="200"></body>
+
+    <!-- En un párrafo si hago salto de línea dentro de él, ese salto no se mostrará -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ea unde sit enim praesentium eaque temporibus placeat necessitatibus.
+    Consectetur voluptas quod debitis ex illum repellat reiciendis nemo libero? Sequi, voluptas?</p>
+
+<!-- Si quiere un texto preformateado se usa la etiqeta <pre></pre> -->
+<pre>
+Mi primera línea del párrafo.
+Mi primera segunda del párrafo.
+Mi primera tercera del párrafo.
+Mi primera cuarta del párrafo.
+</pre>
+
+    <!-- Estilos en HTML -->
+    <!-- Ejemplo. Atributo de color -> style="propiedad.valor" -->
+    <!-- Ejemplo. Atributo de lineado texto -> text-aling=center -->
+    <!-- Ejemplo. Atributo de tipografia -> font-family=tipo de fuente -->
+    <h1 style="color: burlywood;text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large;">Mi titulo con color</h1>
+
+    <!-- FORMATO DE TEXTO -->
+    
+    <!-- 
+    <b></b> -> Texto negrita
+    <strong></strong> -> Texto importante
+    <i></i> -> texto en cursiva
+    <em></em> -> Texto enfatizado
+    <mark></mark> -> Texto marcado
+    <small></small> -> Texto más pequeño
+    <del></del> -> Texto eliminado
+    <ins></ins> -> Texto insertado
+    <sub></sub> -> Texto subíndice
+    <sup></sup> ->  Texto en superíndice
+    -->
+    
+    <p>Salió, en esto, <b>don Quijote</b>, armado de todos sus pertrechos, con el yelmo, aunque abollado, de Mambrino en la cabeza, <strong>embrazado de su rodela y arrimado a su tronco o lanzón</strong>. Suspendió a don Fernando y a los demás la extraña presencia de don Quijote, viendo su rostro de media <i></i>, seco y amarillo, la desigualdad de sus armas y su mesurado continente, y estuvieron callando, hasta ver lo que él decía; el cual, con mucha gravedad y reposo, puestos los ojos en la hermosa Dorotea, dijo:
+    Estoy informado, hermosa señora, deste mi escudero que la vuestra grandeza se ha aniquilado, y vuestro ser se ha deshecho, porque de reina y gran señora que solíades ser os habéis vuelto en una <em>particular doncella</em>. Si esto ha sido <mark>por orden del rey nigromante de vuestro padre</mark>, temeroso que yo no os diese la necesaria y debida ayuda, digo que no supo ni sabe de la misa la media, y que fue poco versado en las historias caballerescas; <ins>porque si él las hubiera leído</ins> y pasado tan atentamente y con tanto espacio como yo las pasé y leí, hallara a cada paso cómo otros <small>caballeros</small> de menor fama que la <del>mía habían acabado</del> cosas más dificultosas, no siéndolo mucho matar a un gigantillo<sup>1</sup>, por arrogante que sea<sub>2</sub>; porque no ha muchas horas que yo me vi con él, y... quiero callar, porque no me digan que miento; pero el tiempo, descubridor de todas las cosas, lo dirá cuando menos lo pensemos.</p>
+
+    <!-- CITAS A UN AUTOR 
+    SE UTILIZA -> <blockquote></blockquote>  -->
+    <P>Fragmento de Don Quijote de la Mancha:</P>
+    <blockquote cite="Don Quijote de la Mancha">
+    Y con esto, entró en el aposento, y todos tras él, y hallaron a don Quijote en el más extraño traje del mundo. Estaba en camisa, la cual no era tan cumplida, que por delante le acabase de cubrir los muslos, y por detrás tenía seis dedos menos; las piernas eran muy largas y flacas, llenas de vello y no nada limpias; tenía en la cabeza un bonetillo colorado grasiento, que era del ventero; en el brazo izquierdo tenía revuelta la manta de la cama, con quien tenía ojeriza Sancho, y él se sabía bien el porqué; y en la derecha, desenvainada la espada, con la cual daba cuchilladas a todas partes, diciendo palabras como si verdaderamente estuviera peleando con algún gigante. Y es lo bueno que no tenía los ojos abiertos, porque estaba durmiendo y soñando que estaba en batalla con el gigante; que fue tan intensa la imaginación de la aventura que iba a fenecer, que le hizo soñar que ya había llegado al reino de Micomicón, y que ya estaba en la pelea con su enemigo; y había dado tantas cuchilladas en los cueros, creyendo que las daba en el gigante, que todo el aposento estaba lleno de vino. Lo cual visto por el ventero, tomó tanto enojo, que arremetió con don Quijote, y a puño cerrado le comenzó a dar tantos golpes, que si Cardenio y el cura no se le quitaran, él acabara la guerra del gigante; y, con todo aquello, no despertaba el pobre caballero, hasta que el barbero trujo un gran caldero de agua fría del pozo, y se le echó por todo el cuerpo de golpe, con lo cual despertó don Quijote; mas no con tanto acuerdo, que echase de ver de la manera que estaba. Dorotea, que vio cuán corta y sotilmente estaba vestido, no quiso entrar a ver la batalla de su ayudador y de su contrario.
+    </blockquote>
+    <!-- Para indicar una abreviatura se utiliza -> <abbr></abbr> -->
+    <p>La traducción del <abbr title="W3 Consortium"> W3C</abbr></p>
+
+    <!-- Para indicar una dirección, de un autor / propietario de un artículo. Se utiliza -> <address></address> -->
+    <p>La dirección es:</p>
+    <address>
+    Calle Campo, 81<br>
+    13700. Tomelloso<br>
+    Ciudad Real
+    </address>
+
+    <!-- Mostrar un texto de Derecha a Izquierda -->
+    <p><bdo dir="rtl">ALBA</bdo></p>
+
+    <!-- Colores en HTML se pueden poner en varios formatos:
+    1. El nombre del color en inglés.
+    2. hexadecimal #fffff(blanco) #00000(negro) #f0000(rojo)...
+    3. HSL apenas se utiliza, color: hsl(9,100%,64%); 
+     -->
+     <h2 style="color: rgb(0, 255, 0);">Titulo en RGB verde</h2>
+     <h2 style="color: #000ff0;">Titulo en Hexadecimal azul</h2>
+
+     <!-- Mostrar un logo: -->
+     <p><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>    615098547</p>
+
+     <!-- Enlace a paginas externas que se muestra en una nueva pestaña -->
+     <a href="https://www.youtube.com/" target="_blank"><img src="img/YT.png" alt="ICONO DE YOUTUBE"></a>
+
+     <!-- ENLACE PARA INDICAR UN TELEFONO -->
+     <a href="tel:+615068547"><br><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg></a>
+
+     <!-- ENLACE PARA INDICAR UN EMAIL -->
+     
+     <a href="mailto:albasanchezolmedo00@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></a>
+     <br>
+     <!-- ENLACE A UN MAPA -->
+    <a href="https://maps.app.goo.gl/b2jGJE4D5hakueht5"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m600-120-240-84-186 72q-20 8-37-4.5T120-170v-560q0-13 7.5-23t20.5-15l212-72 240 84 186-72q20-8 37 4.5t17 33.5v560q0 13-7.5 23T812-192l-212 72Zm-40-98v-468l-160-56v468l160 56Zm80 0 120-40v-474l-120 46v468Zm-440-10 120-46v-468l-120 40v474Zm440-458v468-468Zm-320-56v468-468Z"/></svg></a>
+     </html>
+     <!-- ASJSJSDJSDJDJDJDJDDJDJJDJDJDJDJDJDJDJDJDDJDJDJ -->

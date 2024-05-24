@@ -1,0 +1,21 @@
+#menu{
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    padding: 15px;
+    color: red;
+}
+#menu li{
+    display: inline;
+}
+a{
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none; 
+}
+#menu a:hover{
+    color: red;
+}

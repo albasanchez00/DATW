@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1º Formulario</title>
+    <meta name="autho" content="Alba Sánchez Olmedo"/>
+    <meta name="keywords" content="Formulario,HTML,CSS"/>
+    <link rel="stylesheet" href="../Css/formulario.css">
+</head>
+<body>
+    <!-- Tablas -> <table>....</table> Listas -> <ul>...<li></li>...</ul> -->
+    <!-- En el caso de los formularios, comenzamos con <form>...</form> -->
+    <div id="contenedor">
+        <h1 id="cabecera">Mi primer formulario</h1>
+        <fieldset>
+            <form autocomplete="on" autocapitalize="">
+                <!-- Entrada de datos -->
+                <!-- label -> Etiqueta que muestra el atributo de la entrada, y se debe relacionar con la entrada a través del "id" -->
+                <P>
+                    <label for="nombre">Nombre:</label>
+                <!-- el atributo for debe ir asociado a un tipo -->
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre" required minlength="3" maxlength="20" pattern="[a-Z]">
+                </P>
+                <p>
+                <!-- input type -> Es la más utilizada en los formularios -->
+                    <label for="apellido" placeholder="Ingresa tu apellido">Apellido:</label>
+                    <input type="text">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" readonly value="albasanchezolmedo00@gmail.com" disabled>
+                </p>
+                <p>
+                    <label for="password">Contraseña:</label>
+                    <!-- Al menos un número, al menos una mayúscula, una minúscula y minimo 8 caracteres -->
+                    <input type="password" id="password" min="8" pattern="(?=.* \d)(?=.*[a-z])(?=.*[A-Z].{8,})">
+                    <!-- Los pattern o patrones o expresiones regulares..... los copias de internet -->
+                </p>
+                <p>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" min="18" max="105" step="1" required>
+                </p>
+                <p>
+                    <label for="color">Color:</label>
+                    <input type="color" id="color">
+                </p>
+                <p>
+                    <label for="dni">DNI:</label>
+                    <input type="file" id="dni" accept="img/*" multiple>
+                </p>
+                <p>
+                    <label for="nacimiento">Fecha Nacimiento:</label>
+                    <!-- Fecha -->
+                    <input type="date" name="nacimiento" id="fechaN" min="1960-01-01" max="2024-03-31" required>
+                    <br><input type="datetime-local" name="fechaHora" id="fechaHora">
+                    <!-- Mes -->
+                    <br><input type="month" name="mes" id="mes">
+                </p>
+    
+                
+                <p>
+                    <label for="sexo">Sexo:</label>
+                <!-- Input radio ="radio", mmuestra una seleccion de norma general, solo se puede seleccionar una opción -->
+                    <input type="radio" id="sexo" name="sexo" value="mujer">Mujer
+                    <br>
+                    <input type="radio" id="sexo" name="sexo" value="hombre">Hombre
+                  
+        </fieldset>
+        <fieldset>
+            </p>
+                <label for="buscar">Buscar curso</label>
+                <input type="search" name="">
+            </p>  
+                <div>
+                <!-- Input type="checkbox" -> Son cajas que se pueden seleccionar varias a la vez -->
+                    <label for="cursos">Selecciona los cursos de interés:</label>
+                    <p>
+                        Curso de HTML
+                        <input type="checkbox" name="cursos" id="cursos" value="html">
+                    </p>
+                    <p>
+                        Curso de CSS
+                        <input type="checkbox" name="cursos" id="cursos" value="css">
+                    </p>
+                    <p>
+                        Curso de JavaScript
+                        <input type="checkbox" name="cursos" id="cursos" value="javascript">
+                    </p>
+                    <p>
+                        Curso de Phyton
+                        <input type="checkbox" name="cursos" id="cursos" value="Phyton">
+                    </p>
+                </div>
+                <div>
+                    <label for="modalidad">Seleccione un método de enseñanza:</label>
+                    <select name="modalidad" id="modalidad">
+                        <option></option>
+                        <option value="Presencial">Presencial</option>
+                        <option value="online">Online</option>
+                        <option value="mixta">Mixta</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="horario">Preferencia de Horario:</label>
+                    <select name="horario" id="horario" multiple>
+                        <option value="manianas">Mañanas</option>
+                        <option value="tardes">Tardes</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="navegadorPreferido">Navegador Preferido </label>
+                    <input list="navegador">
+                    <datalist id="navegador">
+                        <option value="Chrome">Chrome</option>
+                        <option value="Edge">Edge</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="Opera">Opera</option>
+                        <option value="Safari">Safari</option>
+                    </datalist>    
+                
+                </div>
+                <div>
+                    <label for="imagen">Seleccione una:</label>
+                    <div id="select-img">
+                        <input type="radio" id="electionImage" name="electionImage">
+                        <br><input type="radio" id="electionImage" name="electionImage">
+                        <br><input type="radio" id="electionImage" name="electionImage">
+                    </div>
+                </div>
+                <div>
+                    <!-- Input type="time" -> Puedes solicitar hora o semana -->
+                <p>
+                    <label for="horaSolicitud">Hora de la Solicitud</label>
+                    <input type="time" id="horaSolicitud">
+                </p>
+                <p>
+                    <label for="semanaInicio">Semana para iniciar la formación</label>
+                    <input type="week" id="semanaInicio">
+                </p>
+            <!-- Controla la entrada de una url de formato válido -->
+                <p>
+                    <label for="urlLinkeIn">url</label>
+                </p>
+                </div>
+                
+                <label for="cantidadUnidades">Introduzca la cantidad de unidades que quiere</label>
+                <script>oninput</script>
+                <input type="range" name="tiempoEstudio" id="tiempoEstudio" min="1" max="100" step="1">
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="textarea">Introduzca más información si se requiere:</label>
+                    <textarea id="textarea" cols="30" rows="10" placeholder="De más detalles (opcional)"></textarea>
+                </div>
+            </fieldset>
+            <p>
+                <!-- Input type="submit" -> Tipico para enviar el formulario, siempre se le debe dar un valor y debe serl el último en el formulario -->
+                <input type="submit" value="Enviar datos">
+            </p>
+            <!-- Input type="reset" -> Limpia lo que haya escrito en el formulario -->
+            <input type="reset" value="Reiniciar datos">
+            <p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+#todo{
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    border-radius: 30px;
+    /* Sirve para posicionar en el centro nuestro contenedor */
+        display: block;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bloques{
+    text-align: center;
+}
+.mini_Texto{
+    display: block;
+    font-size: 11px;
+    margin:20px 0px;
+    padding-left: 304PX;
+    width: 600px;
+}
+#minitexto{
+    text-align: left;
+    width: 60%;
+}
+label, #tip_Doc, #tip_Pais{
+    display: inline-block;
+    width: 300px;
+}
+input{
+    width: 300px;
+    padding: 6px 12px;
+}
+#marco, #marco2, .marco3{
+    width: 300px;
+    display: inline-block;
+}
+.marco3 select{
+    width: 147px;
+    display: inline-block;
+}
+#tip_Doc, #tip_Pais{
+    display: inline-block;
+    width: 60px;
+} 
+#n_Dni, #ciudad, #n_Telefono{
+    display: inline-block;
+    width: 234px;
+}
+#tip_Genero, #tip_Pais{
+    width: 300px;
+    padding: 6px 12px;
+}
+#politicas{
+    width: 100px;
+}
+#bloque_Licencias{
+
+}

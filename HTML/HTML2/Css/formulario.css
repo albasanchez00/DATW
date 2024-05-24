@@ -1,0 +1,22 @@
+#contenedor{
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    border: 1px groove grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 30px;
+    background-color: whitesmoke;
+}
+body{
+    background-color: antiquewhite;
+
+}
+label{
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+

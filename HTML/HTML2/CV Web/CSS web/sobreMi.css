@@ -1,0 +1,50 @@
+/* General */
+body{
+    background-color: #334F86;
+    color: white;
+}
+#titulo{
+    padding: 20px;
+    width: 20%;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#bloque_menus{
+    width: 100vw;
+}
+#menus{
+    width: 70%;
+    text-align: right;
+    
+}
+#menus nav li, #bloque_menus div{
+    display: inline-block;
+}
+#menus nav a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#menus ul{
+    list-style: none;
+    text-align: right;
+}
+
+/*      Imagen       */
+#bloque_Img{
+    width: 100vw;
+    display: flex; /* Para usar flexbox */
+    justify-content: center; /* Para centrar horizontalmente */
+    align-items: center;
+}
+#bloque_Img div{
+    display: flex; /* Para usar flexbox */
+    align-items: center;
+    justify-content: center; /* Para centrar horizontalmente */
+    width: 70%;
+    border: 2px solid black;
+}
+#bloque_Img img{
+    width: 60%;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+    <title>1er form</title>
+    <meta name="author" content="Andrés AR">
+    <meta name="keywords" content="formulario,html,css,practica">
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <picture class="backimg">
+        <img src="img/programacion-stock.jpg" alt="tomaquetoma">
+    </picture>
+    <section id="form-width">
+        <h1>Registro de usuario</h1>
+        <form>
+            <!-- Marco con la etiqueta <fieldset></fieldset> -->
+            <!-- Entrada de datos -->
+            <!-- label -> Etiqueta que muestra el título de la entrada, y se debe relacionar con la entrada a través del "id" -->
+            <fieldset>
+                <!-- Título al fieldset con <legend> -->
+                <legend>Datos Personales</legend>
+                <div>
+                    <label for="nombre">Introduzca su nombre:</label>
+                    <input type="text" id="nombre" placeholder="Nombre" required>
+                </div>
+                <div>
+                    <label for="apellido">Introduzca su apellido:</label>
+                    <input type="text" id="apellido" placeholder="Apellido" required>
+                </div>
+                <div>
+                    <label for="email">Introduzca su correo electrónico:</label>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <label for="password">Introduzca una contraseña</label>
+                    <input type="password" id="password" placeholder="Contraseña"
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]){8,}" required>
+                </div>
+                <div id="dual">
+                    <div id="age">
+                        <label for="edad">Introduzca la edad</label>
+                        <input type="number" id="edad" placeholder="Edad" min="18" max="100" step="1">
+                    </div>
+                    <div id="colorpick">
+                        <label for="color">Introduzca su color favorito</label>
+                        <input type="color">
+                    </div>
+                </div>
+                <label for="fechaNacimiento">Introduzca su fecha de nacimiento</label>
+                <input type="datetime-local" id="fechaNacimiento">
+                <div>
+                    <label for="sexo">Sexo:</label>
+                    <p>
+                        Hombre
+                        <input type="radio" name="sexo" id="sexo" value="hombre">
+                    </p>
+                    <p>
+                        Mujer
+                        <input type="radio" name="sexo" id="sexo" value="mujer">
+                    </p>
+                    <p>
+                        Vikingo
+                        <input type="radio" name="sexo" id="sexo" value="vikingo">
+                    </p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <input type="file" accept="image/jpeg">
+                <legend>Datos de la elección</legend>
+                <div>
+                    <label for="cursos">Selecciona los cursos de interés:</label>
+                    <p>
+                        Curso de HTML
+                        <input type="checkbox" name="cursos" id="cursos" value="html">
+                    </p>
+                    <p>
+                        Curso de CSS
+                        <input type="checkbox" name="cursos" id="cursos" value="css">
+                    </p>
+                    <p>
+                        Curso de JavaScript
+                        <input type="checkbox" name="cursos" id="cursos" value="javascript">
+                    </p>
+                    <p>
+                        Curso de Phyton
+                        <input type="checkbox" name="cursos" id="cursos" value="Phyton">
+                    </p>
+                </div>
+                <div>
+                    <label for="modalidad">Seleccione un método de enseñanza:</label>
+                    <select name="modalidad" id="modalidad">
+                        <option></option>
+                        <option value="Presencial">Presencial</option>
+                        <option value="online">Online</option>
+                        <option value="mixta">Mixta</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="horario">Preferencia de Horario:</label>
+                    <select name="horario" id="horario" multiple>
+                        <option value="manianas">Mañanas</option>
+                        <option value="tardes">Tardes</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="navegadorPreferido">Navegador Preferido </label>
+                    <input list="navegador">
+                    <datalist id="navegador">
+                        <option value="Chrome">Chrome</option>
+                        <option value="Edge">Edge</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="Opera">Opera</option>
+                        <option value="Safari">Safari</option>
+                    </datalist>    
+                
+                </div>
+                <div>
+                    <label for="imagen">Seleccione una:</label>
+                    <div id="select-img">
+                        <input type="radio" id="electionImage" name="electionImage">
+                        <input type="radio" id="electionImage" name="electionImage">
+                        <input type="radio" id="electionImage" name="electionImage">
+                    </div>
+                </div>
+                <div>
+                    <label for="textarea">Introduzca más información si se requiere:</label>
+                    <textarea id="textarea" cols="30" rows="10" placeholder="De más detalles (opcional)"></textarea>
+                </div>
+                <label for="cantidadUnidades">Introduzca la cantidad de unidades que quiere</label>
+                <script>oninput</script>
+                <input type="range" name="tiempoEstudio" id="tiempoEstudio" min="1" max="100" step="1">
+            </fieldset>
+            <div id="sent-delete">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar Datos">
+            </div>
+
+
+        </form>
+    </section>
+</body>
+
+</html>

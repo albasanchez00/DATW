@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+    <title>Formulario</title>
+    <meta name="autho" content="Alba Sánchez Olmedo" />
+    <meta name="keywords" content="Formulario,HTML,CSS" />
+    <link rel="stylesheet" href="../Css/Actividad_5.css">
+</head>
+
+<body>
+    <section id="todo">
+        <h1>FORMULARIO DE INSCRIPCIÓN</h1>
+        <div id="contenedor">
+            <form>
+                <fieldset class="bloques">
+                    <h2 class="titulos">DATOS PERSONALES</h2>
+                    <label for=""><b>Nombre<sup>*</sup></b></label>
+                    <input type="text">
+                    <br><label for=""><b>Apellidos<sup>*</sup></b></label>
+                    <input type="text">
+                    <br><label for=""><b>Género<sup>*</sup></b></label>
+                    <div id="marco">
+                        <select id="tip_Genero">
+                            <option value="[Seleccione]">[Seleccione]</option>
+                            <option value="Mujer">Mujer</option>
+                            <option value="Hombre">Hombre</option>
+                            <option value="No binario">No binario</option>
+                        </select>
+                    </div>
+                    <br><label for=""><b>Fecha nacimiento<sup>*</sup></b></label>
+                    <div class="marco3">
+                        <select>
+                            <option value="-1">[Día]</option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+                            <option value="11"></option>
+                            <option value="12"></option>
+                            <option value="13"></option>
+                            <option value="14"></option>
+                            <option value="15"></option>
+                            <option value="16"></option>
+                            <option value="17"></option>
+                            <option value="18"></option>
+                            <option value="19"></option>
+                            <option value="20"></option>
+                            <option value="21"></option>
+                            <option value="22"></option>
+                            <option value="23"></option>
+                            <option value="24"></option>
+                            <option value="25"></option>
+                            <option value="26"></option>
+                            <option value="27"></option>
+                            <option value="28"></option>
+                            <option value="29"></option>
+                            <option value="30"></option>
+                            <option value="31"></option>
+                        </select>
+                        <select>
+                            <option value="-1">Mes</option>
+                            <option value="Enero">Enero</option>
+                            <option value="Febrero">Febrero</option>
+                            <option value="Marzo">Marzo</option>
+                            <option value="Abril">Abril</option>
+                            <option value="Mayo">Mayo</option>
+                            <option value="Junio">Junio</option>
+                            <option value="Julio">Julio</option>
+                            <option value="Agosto">Agosto</option>
+                            <option value="Septiembre">Septiembre</option>
+                            <option value="Octubre">Octubre</option>
+                            <option value="Noviembre">Noviembre</option>
+                            <option value="Diciembre">Diciembre</option>
+                        </select>
+                        <input type="number" name="Año" id="año">
+                    </div>
+                    <br><label for=""><b>Documento<sup>*</sup></b></label>
+                    <div id="marco">
+                        <select id="tip_Doc">
+                            <option value="DNI">DNI</option>
+                            <option value="NIF">NIF</option>
+                            <option value="NIE">NIE</option>
+                            <option value="Pasaporte">Pasaporte</option>
+                        </select>
+                        <input id="n_Dni" type="text" placeholder="Introduce el número">
+                    </div>
+                    <br><label for=""><b>Nacionalidad<sup>*</sup></b></label>
+                    <div id="marco">
+                        <select id="tip_Pais">
+                            <option value="[Seleccione]">[Seleccione]</option>
+                            <option value="+1">España</option>
+                            <option value="Italia">Italia</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Francia">Francia</option>
+                            <option value="Reino Unido">Reino Unido</option>
+                            <option value="Alemania">Alemania</option>
+                        </select>
+                    </div>
+                    <br><label for=""><b>País/Provincia<sup>*</sup></b></label>
+                    <div class="marco3">
+                        <select>
+                            <option value="España">España</option>
+                            <option value="Italia">Italia</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Francia">Francia</option>
+                            <option value="Reino Unido">Reino Unido</option>
+                            <option value="Alemania">Alemania</option>
+                        </select>
+                        <select>
+                            <option value="[Seleccione]">[Seleccione]</option>
+                            <option value="Albacete">España</option>
+                            <option value="Madrid">Madrid</option>
+                            <option value="Sevilla">Sevilla</option>
+                            <option value="Barcelona">Barcelona</option>
+                            <option value="Valencia">Valencia</option>
+                            <option value="Galicia">Galicia</option>
+                        </select>
+                    </div>
+                    <br><label for=""><b>Código postal<sup>*</sup></b></label>
+                    <input type="text">
+                    <br><label for=""><b>Email<sup>*</sup></b></label>
+                    <input type="text">
+                    <br><label for=""><b>Repite Email<sup>*</sup></b></label>
+                    <input type="text">
+                    <label class="mini_Texto" for="atencion">
+                        ATENCIÓN: Recibirás el justificante de inscripción y las comunicaciones del evento en este
+                        email.
+                    </label>
+                    <label for=""><b>Teléfono<sup>*</sup></b></label>
+                    <div id="marco">
+                        <select id="tip_Pais">
+                            <option value="[Seleccione]">[Seleccione]</option>
+                            <option value="España">+34</option>
+                            <option value="Italia">+10</option>
+                            <option value="Portugal">+33</option>
+                            <option value="Francia">+40</option>
+                            <option value="Reino Unido">+62</option>
+                            <option value="Alemania">+58</option>
+                        </select>
+                        <input id="n_Telefono" type="number">
+                    </div>
+                </fieldset>
+                <fieldset class="bloques">
+                    <h2 class="titulos">OTROS DATOS</h2>
+                    <br><label for=""><b>Timepo estimado de llegada a Meta42<sup>*</sup></b></label>
+                    <input type="text">
+                    <br><label for=""><b>¿Es tu primera participación en el Zurich Rock ´n´ Roll Running Series Madrid?
+                            <sup>*</sup></b></label>
+                    <input type="text">
+                    <br><label for=""><b>¿Cuántos maratones has completado? <sup>*</sup></b></label>
+                    <input type="text">
+                    <br><label for=""><b>¿Cómo conociste la carrera? <sup>*</sup></b></label>
+                    <input type="text">
+                </fieldset>
+                <fieldset class="bloques">
+                    <h2 class="titulos">CONTACTO PARA EMERGENCIAS</h2>
+                    <label for=""><b>Contacto en caso de emergencia <sup>*</sup></b></label>
+                    <input type="text">
+                    <br><label for=""><b>Teléfono de contacto en caso emergencia<sup>*</sup></b></label>
+                    <input type="text">
+                    <br><label for=""><b>Relación con Contacto de Emergencia <sup>*</sup></b></label>
+                    <input type="text">
+                </fieldset>
+                <fieldset class="bloques">
+                    <h2 class="titulos">LICENCIA FEDERATIVA REAL FEDERACIÓN ESPAÑOLA DE ATLETISMO</h2>
+                    <label for=""><b>¿Estás federado/a por la Real Federación Española de Atletismo? -
+                            Maratón<sup>*</sup></b></label>
+                    <section>
+                        <div id="bloque_Licencias">
+                            <input type="radio">
+                            <label for="">NO (5.00€)</label>
+                            <input type="radio">
+                            <label for="">SI (5.00€)</label>
+                        </div>
+                        <div class="mini_Texto">
+                            <label class="mini_Texto" for="">
+                                <p>Si no estás federado, no te preocupes, la inscripción incluye la licencia federativa
+                                    obligatoria de un día (para el día de la carrera) por lo que no tienes que hacer
+                                    ningún
+                                    tramite adicional.</p>
+                                <p>Si por el contrario, estás federado por la RFEA, en abril 2024 se comprobará con la
+                                    RFEA
+                                    si tu licencia está en vigor, en caso afirmativo se abonará automaticamente, en la
+                                    tarjeta con la que realizaste el pago de la inscripción, el importe de la licencia
+                                    de
+                                    día (Maratón 5€). </p>
+                            </label>
+                        </div>
+                    </section>
+                </fieldset>
+                <fieldset class="bloques">
+                    <h2 class="titulos">CAUSAS SOLIDARIAS</h2>
+                    <label for=""><b><sup>*</sup> ¿Has leído y aceptas la política de privacidad del Zurich Rock ´n´ Roll Running Series Madrid?</b></label>
+                    <input id="politicas" type="radio">
+                    <label id="frase_Politicas" for="">Si, la he leido y acepto</label>
+                    <input id="politicas" type="radio">
+                    <label id="frase_Politicas" for="">Si, la he leido y acepto</label>
+                </fieldset>
+                <fieldset>
+                    <h2>SERVICIOS EXTRAS</h2>
+                    <label for=""></label>
+                    <div>
+                        <input id="politicas" type="radio">
+                        <label id="frase_Politicas" for="">Si, quiero las fotos (29.99€)</label>
+                        <input id="politicas" type="radio">
+                        <label id="frase_Politicas" for="">no, no quiero las fotos</label>    
+                    </div>
+                </fieldset>
+                <fieldset class="bloques">
+                    <h2 class="titulos">POLÍTICA DE CANCELACIÓN</h2>
+                    <p><sup>*</sup>¿Has leido y aceptas la Política de Cancelación del evento? </p>
+                    <ul>
+                        <li>Las inscripciones no son transferibles a futuras ediciones del Zurich Rock ‘n’ Roll Running
+                            Series Madrid ni a otros eventos organizados por AD. MAPOMA o Rock´n´Roll Running Series.
+                        </li>
+                        <li>Las inscripciones son reembolsables al 90% en caso de lesión. Para ello, se deberá presentar
+                            un parte médico oficial (firmado y sellado) indicando la lesión del participante. La fecha
+                            límite para presentar dicho parte médico será el 31/03/2024. No se aceptarán solicitudes de
+                            devolución por lesión que no cumplan los requisitos aquí descritos.</li>
+                        <li>Cualquier cambio, por motivos de fuerza mayor o circunstancias ajenas a la organización de
+                            la carrera (incluidas restricciones y/o nuevas condiciones causadas por la Covid19), tanto
+                            en los procedimientos, como en el recorrido, como la fecha y/o horarios de la carrera, o la
+                            cancelación total o parcial del evento y/o los eventos complementarios no implica, en ningún
+                            caso, el derecho a la devolución del importe de la inscripción.</li>
+                        <li>En caso de cambio de fecha del evento, la organización guardará la inscripción para la nueva
+                            fecha a todos los participantes inscritos. En ningún caso se realizarán devoluciones del
+                            importe de la inscripción.</li>
+                        <li>En caso de cancelación total del evento, la organización guardará la inscripción para la
+                            próxima edición a todos los participantes inscritos. En ningún caso se realizarán
+                            devoluciones del importe de la inscripción.</li>
+                        <input id="politicas" type="radio">
+                        <label id="frase_Politicas" for="">Si, la he leido y acepto</label>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+/* General */
+body{
+    background-color: #334F86;
+    color: white;
+}
+#titulo{
+    padding: 20px;
+    width: 20%;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#bloque_menus{
+    width: 100vw;
+}
+#menus{
+    width: 70%;
+    text-align: right;
+    
+}
+#menus nav li, #bloque_menus div{
+    display: inline-block;
+}
+#menus nav a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#menus ul{
+    list-style: none;
+    text-align: right;
+}
+
+/*      Imagen       */
+#bloque_Img{
+    display: flex; /* Para usar flexbox */
+    justify-content: center; /* Para centrar horizontalmente */
+}
+#bloque_Img div{
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+#bloque_Img img{
+    width: 100%;
+}
+
+/* Bloque Columna 1 */
+#bloque_col1{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    width: 100%;
+}
+#bloque_col1 div{
+    width: 50%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .2);
+}
+
